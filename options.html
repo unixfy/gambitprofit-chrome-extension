@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <script src="assets/jquery-3.5.1.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/options.js"></script>
+    <style>
+        body {
+            padding: 20px;
+            width: 650px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>GambitProfit Extension Settings</h3>
+    <small class="text-muted">You can configure the GambitProfit Chrome extension here. All settings are synced with your Google account (if you're signed in to your browser with it).</small>
+    <hr>
+<!--
+    This form lets the user set the default token amount
+-->
+    <form id="defaultTokenAmountForm">
+        <div class="form-group">
+            <label for="defaultTokenAmount">Set default number of tokens for bet calculation</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="defaultTokenAmount"
+                       placeholder="Enter # of tokens" min="50" max="70000">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" id="defaultTokenSubmitBtn">Set tokens</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

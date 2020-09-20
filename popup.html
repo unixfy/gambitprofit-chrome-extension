@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <script src="assets/jquery-3.5.1.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/popup.js"></script>
+    <style>
+        body {
+            padding: 20px;
+            width: 500px;
+            height: 550px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav nav-tabs mb-3" id="uiTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="apidata-tab" data-toggle="tab" href="#apidata" role="tab" aria-controls="apidata" aria-selected="true">Bet Amounts</a>
+        </li>
+<!--        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="teamchallenge-tab" data-toggle="tab" href="#teamchallenge" role="tab" aria-controls="teamchallenge" aria-selected="false">Team Challenge Bot</a>
+        </li>-->
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="uiTabsContent">
+        <div class="tab-pane fade show active" id="apidata" role="tabpanel" aria-labelledby="apidata-tab">
+            <h4>Bet Amounts for Hedging</h4>
+            Note: This only displays data for hedging! For MedRisk/HighRisk bets, please visit <a href="https://gambitprofit.com" target="_blank">GambitProfit.com</a>.
+            <hr>
+            <form id="tokenAmountForm">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="tokenAmount"
+                               placeholder="Enter # of tokens" min="50" max="70000">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" id="tokenSubmitBtn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div id="showData">
+
+            </div>
+        </div>
+
+<!--        <div class="tab-pane fade" id="teamchallenge" role="tabpanel" aria-labelledby="teamchallenge-tab">
+            <h4>Team Challenge Bot</h4>
+            This tool will redeem your Gambit tokens to SB, one at a time. This is great for team challenges, because each 1 point redemption is 20 points in the team challenge!
+            <br>
+            <b>You need to be logged in to Gambit for this to work - otherwise it will fail silently!</b>
+            <hr>
+            <form id="teamChallengeForm">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="redeemAmount"
+                               placeholder="Number of tokens to redeem" min="1" max="20000">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button" id="teamChallengeSubmitBtn">Redeem</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>-->
+
+        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <h4>GambitProfit.com Chrome Extension</h4>
+            This extension for Chromium & derivative browsers is created by <a href="https://unixfy.net" target="_blank">Unixfy</a>.
+            Data comes directly from the GambitProfit API.
+            <br>
+            <br>
+            <i>If you like this extension, please help me keep the lights on: </i> <a class="btn btn-success" href="https://gambitprofit.com/donate" target="_blank" role="button">Donate now</a>
+            <hr>
+            Content copyright &copy; 2020 GambitProfit.com - Unauthorized redistribution prohibited
+        </div>
+    </div>
+</body>
+</html>
