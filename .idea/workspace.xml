@@ -20,23 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27fedde5-5261-40a7-ba88-4f3457d54e59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gambitprofit-chrome-extension.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/background.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gambit-128x128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gambit-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gambit-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gambit-48x48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/options.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/options.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +61,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600394103421</updated>
-      <workItem from="1600394106957" duration="24400000" />
+      <workItem from="1600394106957" duration="24711000" />
     </task>
+    <task id="LOCAL-00001" summary="Preliminary extension version - still need to write JS logic and polish status messages">
+      <created>1600616645928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600616645928</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +86,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Preliminary extension version - still need to write JS logic and polish status messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preliminary extension version - still need to write JS logic and polish status messages" />
   </component>
 </project>
