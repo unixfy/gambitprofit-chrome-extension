@@ -92,7 +92,7 @@ function showData(data) {
             <br>
             Bet <b>${data[0].Calc.NoRisk.Team2BetAmount}</b> tokens on <b>${data[0].Team2.Name}</b> to win ${data[0].Calc.NoRisk.Team2BetAmount * data[0].Team2.Reward} tokens
             <br>
-            <span class="badge badge-success badge-pill">${data[0].Calc.NoRisk.ProfitPerCard}% profit</span>
+            <span class="badge ${ data[0].Calc.NoRisk.ProfitPerCard > 0.00 ? "badge-success" : "badge-danger"} badge-pill">${data[0].Calc.NoRisk.ProfitPerCard}% profit</span>
             <br>
             <small class="text-muted">Last updated ${data[0].updatedAt}</small>
     `
