@@ -24,7 +24,7 @@ function restore_options() {
     // Default is 300 tokens
     chrome.storage.sync.get({
         tokenAmount: 300
-    }, function (items) {
+    }, function (items) {   
         // Set the value of the fields in settings to the ones pulled from Chrome.storage
         document.getElementById('defaultTokenAmount').value = items.tokenAmount;
     });
