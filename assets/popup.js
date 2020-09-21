@@ -88,9 +88,9 @@ function showData(data) {
             ${data[0].Calc.NoRisk.ProfitPerCard > 0.00 ? "" : '<div class="alert alert-warning" role="alert">&#9888; This match is not profitable for hedging!</div>'}
             <b>Detected Game Name:</b> ${data[0].Team1.Name} v. ${data[0].Team2.Name}
             <br>
-            <b>Bet ${data[0].Calc.NoRisk.Team1BetAmount} tokens on ${data[0].Team1.Name}</b>
+            Bet <b>${data[0].Calc.NoRisk.Team1BetAmount}</b> tokens on <b>${data[0].Team1.Name}</b>
             <br>
-            <b>Bet ${data[0].Calc.NoRisk.Team2BetAmount} tokens on ${data[0].Team2.Name}</b>
+            Bet <b>${data[0].Calc.NoRisk.Team2BetAmount}</b> tokens on <b>${data[0].Team2.Name}</b>
             <br>
             <span class="badge badge-success badge-pill">${data[0].Calc.NoRisk.ProfitPerCard}% profit</span>
             <br>
