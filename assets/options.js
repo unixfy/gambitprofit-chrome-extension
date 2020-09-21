@@ -1,6 +1,8 @@
+// This file holds common functions
+
 // Saves extension options to chrome.storage
-function save_options() {
-    var tokenAmount = document.getElementById('defaultTokenAmount').value;
+function saveSettings() {
+    let tokenAmount = document.getElementById('defaultTokenAmount').value;
     chrome.storage.sync.set({
         // Drop the token amount into the Chrome synced storage
         tokenAmount: tokenAmount
@@ -20,20 +22,20 @@ function save_options() {
 }
 
 // Restores options from chrome.storage
-function restore_options() {
+function restoreSettings() {
     // Default is 300 tokens
     chrome.storage.sync.get({
         tokenAmount: 300
-    }, function (items) {   
+    }, function (items) {
         // Set the value of the fields in settings to the ones pulled from Chrome.storage
         document.getElementById('defaultTokenAmount').value = items.tokenAmount;
     });
 }
 
-// Listen for options save
 document.addEventListener('DOMContentLoaded', function () {
-    restore_options();
+    // Restore settings when options page loaded
+    restoreSettings();
 
-    // Add listener to save button
-    document.getElementById('saveSettingsBtn').addEventListener('click', save_options);
+    // Run save function when save button clicked
+    document.getElementById('saveSettingsBtn').addEventListener('click', saveSettings);
 });
