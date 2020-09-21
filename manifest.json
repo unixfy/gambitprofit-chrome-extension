@@ -21,7 +21,7 @@
     "48": "images/gambit-48x48.png",
     "128": "images/gambit-128x128.png"
   },
-  "permissions": ["storage", "declarativeContent", "activeTab", "https://api-production.gambitrewards.com/*", "https://api.gambitprofit.com/*"],
+  "permissions": ["storage", "declarativeContent", "activeTab", "https://api.gambitprofit.com/*"],
   "manifest_version": 2,
   "options_ui": {
     "page": "options.html",
