@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27fedde5-5261-40a7-ba88-4f3457d54e59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/options.html" beforeDir="false" afterPath="$PROJECT_DIR$/options.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600394103421</updated>
-      <workItem from="1600394106957" duration="24711000" />
+      <workItem from="1600394106957" duration="24731000" />
+      <workItem from="1600652601271" duration="1544000" />
     </task>
     <task id="LOCAL-00001" summary="Preliminary extension version - still need to write JS logic and polish status messages">
       <created>1600616645928</created>
@@ -70,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600616645928</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Put Options.js into the wrong folder, oops">
+      <created>1600616667164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600616667164</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,9 +96,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Preliminary extension version - still need to write JS logic and polish status messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preliminary extension version - still need to write JS logic and polish status messages" />
+    <MESSAGE value="Put Options.js into the wrong folder, oops" />
+    <option name="LAST_COMMIT_MESSAGE" value="Put Options.js into the wrong folder, oops" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="324" y="165" key="Vcs.Push.Dialog.v2" timestamp="1600616670063">
+      <screen x="0" y="0" width="1462" height="864" />
+    </state>
+    <state x="324" y="165" key="Vcs.Push.Dialog.v2/0.0.1462.864@0.0.1462.864" timestamp="1600616670063" />
   </component>
 </project>
