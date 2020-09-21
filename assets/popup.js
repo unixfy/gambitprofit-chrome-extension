@@ -67,7 +67,7 @@ function fetchData() {
                 // Show success alert when settings are saved.
                 $(`
                 <div class="alert alert-danger mt-2 fade show" id="pageUrlError" role="alert">
-                It seems like you do not have a Gambit play page open!
+                You need to open the page for an individual game for this calculation to work!
                 </div>
                 `).hide().appendTo('#showData').show();
             }
