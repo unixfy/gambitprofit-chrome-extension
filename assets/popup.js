@@ -63,11 +63,10 @@ function fetchData() {
                         alert('An error occurred! ' + err);
                     });
             } else {
-                // Show error
-                // Show success alert when settings are saved.
+                // Show error when the page is not correct
                 $(`
                 <div class="alert alert-danger mt-2 fade show" id="pageUrlError" role="alert">
-                You need to open the page for an individual game for this calculation to work!
+                You need to open a match page for this calculation to work!
                 </div>
                 `).hide().appendTo('#showData').show();
             }
@@ -86,6 +85,7 @@ function showData(data) {
     let content = document.createElement("span");
 
     content.innerHTML = `
+            ${data[0].Calc.NoRisk.ProfitPerCard > 0.00 ? "" : '<div class="alert alert-warning" role="alert">&#9888; This match is not profitable for hedging!</div>'}
             <b>Detected Game Name:</b> ${data[0].Team1.Name} v. ${data[0].Team2.Name}
             <br>
             <b>Bet ${data[0].Calc.NoRisk.Team1BetAmount} tokens on ${data[0].Team1.Name}</b>
@@ -95,7 +95,7 @@ function showData(data) {
             <span class="badge badge-success badge-pill">${data[0].Calc.NoRisk.ProfitPerCard}% profit</span>
             <br>
             <small class="text-muted">Last updated ${data[0].updatedAt}</small>
-`
+    `
 
     mainContainer.appendChild(content);
 }
