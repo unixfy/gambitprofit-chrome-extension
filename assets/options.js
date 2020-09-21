@@ -14,7 +14,7 @@ function saveSettings() {
         </div>
         `).hide().appendTo('#response').show();
 
-        // Hide alert after 750ms
+        // Hide alert after 2500ms
         setTimeout(function () {
             $("#settingsSuccessAlert").alert('close')
         }, 2500);

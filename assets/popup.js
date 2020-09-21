@@ -36,19 +36,42 @@
 
 // Fetch data from GambitProfit API
 function fetchData() {
-    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
-        fetch('https://api.gambitprofit.com/gambit-plays/tokens/' + document.getElementById('tokenAmount').value + '/?PlayUrl=' + tabs[0].url)
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                // Show data in popup window
-                showData(data);
-                console.log('Data successfully reloaded.');
-            })
-            .catch(function (err) {
-                alert('An error occurred! ' + err);
-            });
+    // Fetch token amount from Chrome storage api
+    chrome.storage.sync.get({
+        tokenAmount: 300
+    }, function (items) {
+        // Grab the URL of the current tab, because we will use this in the API request
+        chrome.tabs.query({currentWindow: true, active: true}, function (tabs) {
+            // Validate that the user is on a match page, otherwise display an error
+            if(tabs[0].url.includes('/match/')) {
+                // Show loader
+                $("#loader").show();
+
+                fetch('https://api.gambitprofit.com/gambit-plays/tokens/' + items.tokenAmount + '/?PlayUrl=' + tabs[0].url)
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        // Add information and alerts to window
+                        // Show data in popup window
+                        showData(data);
+                        // Hide loader
+                        $("#loader").hide();
+
+                    })
+                    .catch(function (err) {
+                        alert('An error occurred! ' + err);
+                    });
+            } else {
+                // Show error
+                // Show success alert when settings are saved.
+                $(`
+                <div class="alert alert-danger mt-2 fade show" id="pageUrlError" role="alert">
+                It seems like you do not have a Gambit play page open!
+                </div>
+                `).hide().appendTo('#showData').show();
+            }
+        });
     });
 }
 
@@ -79,14 +102,12 @@ function showData(data) {
 
 document.addEventListener('DOMContentLoaded', function () {
     // Listener for redeem button
-/*
-    document.getElementById("teamChallengeSubmitBtn").addEventListener("click", teamChallengeBot);
-*/
-    // Listener for bet amounts token button (preventdefault to stop page from reloading)
-    document.getElementById("tokenAmountForm").addEventListener("submit", function(e){
-       e.preventDefault();
-       fetchData();
-    });
+    /*
+        document.getElementById("teamChallengeSubmitBtn").addEventListener("click", teamChallengeBot);
+    */
+
+    // Load the data immediately on page load
+    fetchData();
 });
 
 

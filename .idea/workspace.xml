@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27fedde5-5261-40a7-ba88-4f3457d54e59" name="Default Changelist" comment="" />
+    <list default="true" id="27fedde5-5261-40a7-ba88-4f3457d54e59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +66,8 @@
       <updated>1600394103421</updated>
       <workItem from="1600394106957" duration="24731000" />
       <workItem from="1600652601271" duration="1570000" />
+      <workItem from="1600654211481" duration="45000" />
+      <workItem from="1600696186776" duration="3582000" />
     </task>
     <task id="LOCAL-00001" summary="Preliminary extension version - still need to write JS logic and polish status messages">
       <created>1600616645928</created>
@@ -83,7 +90,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600654172783</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Semantic stuff? idk">
+      <created>1600654232881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600654232881</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Clean up options.js (fix naming &amp; comments)">
+      <created>1600696542248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600696542248</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,12 +126,19 @@
     <MESSAGE value="Preliminary extension version - still need to write JS logic and polish status messages" />
     <MESSAGE value="Put Options.js into the wrong folder, oops" />
     <MESSAGE value="Finish out logic for options page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish out logic for options page" />
+    <MESSAGE value="Semantic stuff? idk" />
+    <MESSAGE value="Clean up options.js (fix naming &amp; comments)" />
+    <MESSAGE value="Move the token amount to the Chrome extension settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move the token amount to the Chrome extension settings" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="324" y="165" key="Vcs.Push.Dialog.v2" timestamp="1600654179773">
+    <state x="462" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600696433449">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="324" y="165" key="Vcs.Push.Dialog.v2/0.0.1462.864@0.0.1462.864" timestamp="1600654179773" />
+    <state x="462" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1462.864@0.0.1462.864" timestamp="1600696433449" />
+    <state x="324" y="165" key="Vcs.Push.Dialog.v2" timestamp="1600654242110">
+      <screen x="0" y="0" width="1462" height="864" />
+    </state>
+    <state x="324" y="165" key="Vcs.Push.Dialog.v2/0.0.1462.864@0.0.1462.864" timestamp="1600654242110" />
   </component>
 </project>
